@@ -1,0 +1,10 @@
+tasks:
+  - name: Init
+    init: yarn              # Install Packages
+    command: yarn dev       # Start development server
+
+ports:
+  - name: Development port
+    port: 5173
+    onOpen: open-browser
+    visibility: public
