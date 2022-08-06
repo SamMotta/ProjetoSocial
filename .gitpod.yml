@@ -4,7 +4,12 @@ tasks:
     command: yarn dev       # Start development server
 
 ports:
-  - name: Development port
+  - name: vite dev port
     port: 5173
+    onOpen: open-browser
+    visibility: public
+  
+  - name: vite preview port
+    port: 4173
     onOpen: open-browser
     visibility: public
