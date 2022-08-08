@@ -1,4 +1,4 @@
 node_modules
 *.local
-# 'Cause we need to test it first, and we don't need dist folder in the repo ;)
-dist 
+# Fake? D:< 'Cause we need to test it first, and we don't need dist folder in the repo ;)
+# dist 
