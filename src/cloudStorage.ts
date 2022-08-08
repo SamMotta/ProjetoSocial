@@ -7,7 +7,7 @@ const mural = document.querySelector<HTMLDivElement>('#mural')!
 // Necessário manter todo o código assíncrono dentro da função, por causa de compatibilidade
 async function addCards() {
     const images = await bucket.list({ maxResults: 5 }).then(i => i.items)
-const muralContent = images.map(async image => {
+    const muralContent = images.map(async image => {
     return {
         title: image.name.replace(/\..*/, ""),
         uri: image.getDownloadURL()

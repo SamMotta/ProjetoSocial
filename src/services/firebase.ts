@@ -14,6 +14,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const storage = firebase.storage()
+const storage = firebase.app().storage(`gs://${import.meta.env.VITE_STORAGE_BUCKET}`)
 
 export { firebase, storage }
